@@ -45,7 +45,7 @@ pub enum Role {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Context {
-    pub packet: Packet,
+    pub packet: Vec<Packet>,
     pub channel: String,
     pub user: Option<String>,
     pub role: Option<Role>,
