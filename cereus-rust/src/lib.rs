@@ -58,3 +58,7 @@ pub struct PluginPacket {
     pub context: Context,
     pub target: String
 }
+
+pub trait ToCactusPacket {
+    fn to_cactus_packet(&mut self) -> Packet;
+}
